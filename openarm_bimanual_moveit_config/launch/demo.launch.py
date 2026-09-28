@@ -205,7 +205,14 @@ def moveit_nodes_spawner(context: LaunchContext, arm_type, use_fake_hardware):
             package="moveit_ros_move_group",
             executable="move_group",
             output="screen",
-            parameters=[moveit_params],
+            parameters=[
+                moveit_params,
+                {
+                    # Action server used by MoveIt Task Constructor to execute
+                    # planned task solutions.
+                    "capabilities": "move_group/ExecuteTaskSolutionCapability",
+                },
+            ],
         ),
         Node(
             package="rviz2",

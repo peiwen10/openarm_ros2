@@ -16,6 +16,28 @@ Panels:
       - /Current View1
     Name: Views
     Splitter Ratio: 0.5
+  - Class: moveit_task_constructor/Motion Planning Tasks
+    Global Settings:
+      Task View Settings:
+        Show Computation Times: true
+        Task Expansion: All Expanded
+    Name: Motion Planning Tasks
+    Tasks View:
+      property_splitter:
+        - 197
+        - 121
+      solution_sorting:
+        column: 0
+        order: 1
+      solutions_splitter:
+        - 397
+        - 198
+      solutions_view_columns: ~
+      tasks_view_columns:
+        - 295
+        - 26
+        - 26
+        - 48
 Visualization Manager:
   Class: ""
   Displays:
@@ -389,6 +411,27 @@ Visualization Manager:
         Show Robot Visual: true
       Value: true
       Velocity_Scaling_Factor: 0.1
+    - Class: moveit_task_constructor/Motion Planning Tasks
+      Enabled: true
+      Interrupt Display: false
+      Loop Animation: false
+      Markers:
+        All at once?: false
+        Value: true
+      Name: Motion Planning Tasks
+      Robot:
+        Fixed Robot Color: 150; 50; 150
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+        Robot Alpha: 0.5
+        Show Robot Collision: false
+        Show Robot Visual: true
+      Task Solution Topic: /solution
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -439,6 +482,10 @@ Window Geometry:
   MotionPlanning:
     collapsed: false
   MotionPlanning - Trajectory Slider:
+    collapsed: false
+  Motion Planning Tasks:
+    collapsed: false
+  Motion Planning Tasks - Slider:
     collapsed: false
   QMainWindow State: 000000ff00000000fd00000001000000000000036a000006f0fc0200000005fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000007000fffffffb000000100044006900730070006c0061007900730100000069000001ec0000017800fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006701000002610000036f0000028e00fffffffb0000000800480065006c0070000000029a0000006e000000cf00fffffffb0000000a0056006900650077007301000005dc0000017d0000012300ffffff0000096a000006f000000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
